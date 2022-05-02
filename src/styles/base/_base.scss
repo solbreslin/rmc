@@ -1,0 +1,38 @@
+body {
+}
+
+section {
+  display: grid;
+  grid-template-columns: 1fr minmax(320px, 1000px) 1fr;
+  padding: 0 1rem;
+
+  > * {
+    grid-column: 2;
+  }
+
+  @include respond-to(tablet) {
+    padding: 0 2rem;
+  }
+}
+
+.section {
+  margin: 0 auto;
+  max-width: var(--rmc-content-max-width);
+  padding: var(--rmc-space-3);
+
+  @include respond-to(tablet) {
+    padding: 2rem;
+  }
+}
+
+html,
+body,
+#___gatsby,
+#gatsby-focus-wrapper {
+  height: 100%;
+}
+
+::selection {
+  // background-color: var(--rmc-text-color);
+  // color: hsl(var(--rmc-primary-color-hs) 40%);
+}

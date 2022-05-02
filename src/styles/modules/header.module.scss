@@ -1,0 +1,21 @@
+.header {
+  --menu-item-padding: calc(var(--rmc-space-2) + 2px) var(--rmc-space-3)
+    var(--rmc-space-2);
+
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+
+  @include respond-to(tablet) {
+    --menu-item-padding: calc(var(--rmc-space-3) + 2px) var(--rmc-space-3)
+      var(--rmc-space-3);
+    padding: 0 var(--rmc-space-3);
+    z-index: 3;
+  }
+}
+
+.invert {
+  background: black;
+  color: white;
+}

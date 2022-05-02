@@ -1,69 +1,101 @@
-import * as React from "react"
-import { Link, graphql } from "gatsby"
+import * as React from "react";
+import { graphql } from "gatsby";
+import * as styles from "./../styles/modules/index.module.scss";
 
-import Bio from "../components/bio"
-import Layout from "../components/layout"
-import Seo from "../components/seo"
+import Layout from "../components/layout";
+import Head from "../components/head";
 
-const BlogIndex = ({ data, location }) => {
-  const siteTitle = data.site.siteMetadata?.title || `Title`
-  const posts = data.allMarkdownRemark.nodes
-
-  if (posts.length === 0) {
-    return (
-      <Layout location={location} title={siteTitle}>
-        <Seo title="All posts" />
-        <Bio />
-        <p>
-          No blog posts found. Add markdown posts to "content/blog" (or the
-          directory you specified for the "gatsby-source-filesystem" plugin in
-          gatsby-config.js).
-        </p>
-      </Layout>
-    )
-  }
+const Index = ({ data, location }) => {
+  const siteTitle = data.site.siteMetadata?.title || `Title`;
 
   return (
     <Layout location={location} title={siteTitle}>
-      <Seo title="All posts" />
-      <Bio />
-      <ol style={{ listStyle: `none` }}>
-        {posts.map(post => {
-          const title = post.frontmatter.title || post.fields.slug
+      <Head title="Home" />
+      <section className={styles.banner}>
+        <h1 className={styles.bannerTitle}>Thinking. Results.</h1>
+        <span className={styles.bannerSeparator}></span>
+        <p className={styles.bannerSubtitle}>
+          Helping solve significant communication challenges.
+        </p>
+      </section>
+      <section>
+        <div>
+          <h3>Focus</h3>
+          <p>
+            This consultancy focuses on what we do best and where we know we can
+            give our clients the most value. We bring extensive leadership
+            experience with leading communication agencies and measure our
+            success by the results we help our clients achieve.
+          </p>
+          <a href="https://www.linkedin.com/in/robert-mannion-4a55265/">
+            Profile on LinkedIn
+          </a>
+        </div>
+        <div>
+          <h3>Expertise</h3>
+          <p>
+            We have a strong record helping a wide range of clients succeed with
+            often challenging assignments.
+          </p>
 
-          return (
-            <li key={post.fields.slug}>
-              <article
-                className="post-list-item"
-                itemScope
-                itemType="http://schema.org/Article"
-              >
-                <header>
-                  <h2>
-                    <Link to={post.fields.slug} itemProp="url">
-                      <span itemProp="headline">{title}</span>
-                    </Link>
-                  </h2>
-                  <small>{post.frontmatter.date}</small>
-                </header>
-                <section>
-                  <p
-                    dangerouslySetInnerHTML={{
-                      __html: post.frontmatter.description || post.excerpt,
-                    }}
-                    itemProp="description"
-                  />
-                </section>
-              </article>
+          <p>
+            We draw on the input of highly-experienced communication
+            professionals in putting together the right team for each client or
+            client need.
+          </p>
+          <h4>Areas of expertise</h4>
+          <ul>
+            <li>Crisis management, planning, preparation</li>
+            <li>Stakeholder engagement</li>
+            <li>Reputation management</li>
+            <li>
+              Communication strategy, including change, health, litigation and
+              political communication
             </li>
-          )
-        })}
-      </ol>
+            <li>Corporate communication, documents and materials</li>
+            <li>Media relations</li>
+          </ul>
+          <h4>Training and capability building</h4>
+          <ul>
+            <li>
+              Facilitation of workshops in strategy, change, brand narrative
+            </li>
+            <li>Media training</li>
+            <li>Presentation training, managing high-conflict environments</li>
+            <li>Business writing, board report writing</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Sectors</h3>
+          <ul>
+            <li>
+              Private sector, property, energy, finance, insurance, primary
+              industry
+            </li>
+            <li>Public sector, education, health, housing</li>
+            <li>Public good, heritage, recreation, social agency</li>
+            <li>Infrastructure, regional and private and public sector</li>
+            <li>America’s Cup (strategic counsel to two winning teams)</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Contact</h3>
+          <p>+027 615 20 06</p>
+          <p>info@robertmannion.nz</p>
+          <p>
+            123 Fake St,
+            <br />
+            Britomart
+            <br />
+            Auckland
+          </p>
+        </div>
+      </section>
     </Layout>
-  )
-}
+  );
+};
 
-export default BlogIndex
+export default Index;
 
 export const pageQuery = graphql`
   query {
@@ -72,18 +104,5 @@ export const pageQuery = graphql`
         title
       }
     }
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
-      nodes {
-        excerpt
-        fields {
-          slug
-        }
-        frontmatter {
-          date(formatString: "MMMM DD, YYYY")
-          title
-          description
-        }
-      }
-    }
   }
-`
+`;

@@ -1,0 +1,24 @@
+.banner {
+  background: black;
+  color: white;
+  height: 75vh;
+  align-content: center;
+}
+
+.banner-title {
+  font-family: "aktiv-grotesk", sans-serif;
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.banner-separator {
+  background-color: var(--rmc-color-primary);
+  display: block;
+  height: 3px;
+  margin: 2rem 0;
+  width: 80px;
+}
+
+.banner-subtitle {
+  color: var(--rmc-color-text-grey);
+}

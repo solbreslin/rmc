@@ -1,0 +1,59 @@
+.button {
+  --button-size: 56px;
+  --line-height: 2px;
+  --line-width: 32px;
+  --line-edge-offset: calc((var(--button-size) - var(--line-width)) / 2);
+  --transition-setting: 0.125s ease-out;
+  --transition-delay: 0.125s;
+
+  cursor: pointer;
+  height: var(--button-size);
+  margin-right: 8px;
+  position: relative;
+  width: var(--button-size);
+  z-index: 10001;
+
+  &:before,
+  &:after {
+    background: white;
+    content: "";
+    left: var(--line-edge-offset);
+    height: var(--line-height);
+    position: absolute;
+    right: var(--line-edge-offset);
+    transition: transform var(--transition-setting),
+      bottom var(--transition-setting) var(--transition-delay);
+  }
+
+  &:before {
+    bottom: 30px;
+  }
+
+  &:after {
+    bottom: 22px;
+  }
+}
+
+.open {
+  &:before,
+  &:after {
+    transition: transform var(--transition-setting) var(--transition-delay),
+      bottom var(--transition-setting);
+  }
+
+  &:before {
+    bottom: 26px;
+    transform: rotate(45deg);
+  }
+
+  &:after {
+    bottom: 26px;
+    transform: rotate(-45deg);
+  }
+}
+
+@include respond-to(tablet) {
+  .button {
+    display: none;
+  }
+}

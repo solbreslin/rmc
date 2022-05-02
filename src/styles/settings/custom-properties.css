@@ -1,0 +1,45 @@
+:root {
+  --rmc-header-height: 64px;
+
+  --rmc-primary-color-hs: 217 51%;
+  --rmc-primary-color-l: 45%;
+
+  --rmc-color-primary: #0399db;
+  --rmc-color-text-grey: hsl(0, 0%, 80%);
+
+  --rmc-bg-color: hsl(var(--rmc-primary-color-hs) 5%);
+  --rmc-text-color: hsl(var(--rmc-primary-color-hs) 95%);
+  --rmc-bg-color-blue: hsl(var(--rmc-primary-color-hs) 20%);
+  --rmc-line-color: hsla(0 0% 100% / 0.2);
+  --rmc-heading-color: hsla(0 0% 100% / 0.5);
+
+  --rmc-font-size-0: 0.618rem;
+  --rmc-font-size-1: 1rem;
+  --rmc-font-size-2: 1.618rem;
+  --rmc-font-size-3: 2.618rem;
+  --rmc-font-size-4: 4.236rem;
+
+  --rmc-space-0: 0.236rem;
+  --rmc-space-1: 0.382rem;
+  --rmc-space-2: 0.618rem;
+  --rmc-space-3: 1rem;
+  --rmc-space-4: 1.618rem;
+  --rmc-space-5: 2.618rem;
+  --rmc-space-6: 4.236rem;
+  --rmc-space-7: 6.854rem;
+  --rmc-space-8: 11.089rem;
+
+  --rb-font-family-normal: Akkurat-Reg;
+  --rb-font-family-bold: Akkurat-Bold;
+
+  --rmc-line-height: 1.618;
+  --rmc-letter-spacing: 0.1em;
+  --rmc-ls-heading: 0.1em;
+  --rmc-ls-body: 0.05em;
+
+  --rmc-transition-settings: 0.125s linear;
+
+  --rmc-text-hover-opacity: 0.75;
+
+  --rmc-content-max-width: 1200px;
+}

@@ -1,0 +1,9 @@
+@use "sass:math";
+
+$breakpoints: (
+  "mobile-l": 480px,
+  "tablet": 769px,
+  "desktop": 960px,
+  "widescreen": 1152px,
+  "full-hd": 1344px,
+);

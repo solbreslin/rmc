@@ -1,18 +1,25 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
+    title: `Robert Mannion Consulting`,
     author: {
-      name: `Kyle Mathews`,
-      summary: `who lives and works in San Francisco building useful things.`,
+      name: `Robert Mannion`,
+      summary: `Robert Mannion is a ... `,
     },
     description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,
+    siteUrl: `https://www.robertmannion.com/`,
     social: {
-      twitter: `kylemathews`,
+      twitter: `robertmannion`,
     },
   },
   plugins: [
     `gatsby-plugin-image`,
+
+    {
+      resolve: `gatsby-plugin-sass`,
+      options: {
+        additionalData: `@import "${__dirname}/src/styles/settings/all.scss";`,
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -82,8 +89,8 @@ module.exports = {
                   url: site.siteMetadata.siteUrl + node.fields.slug,
                   guid: site.siteMetadata.siteUrl + node.fields.slug,
                   custom_elements: [{ "content:encoded": node.html }],
-                })
-              })
+                });
+              });
             },
             query: `
               {
@@ -129,4 +136,4 @@ module.exports = {
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
   ],
-}
+};
