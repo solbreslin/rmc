@@ -67,6 +67,17 @@
         letter-spacing: var(--rmc-ls-body);
         padding: var(--menu-item-padding);
 
+        span {
+          border-bottom: 2px solid transparent;
+          padding-bottom: 3px;
+        }
+
+        &:hover {
+          span {
+            border-bottom-color: currentColor;
+          }
+        }
+
         &.current {
           color: white;
         }

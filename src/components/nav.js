@@ -17,7 +17,7 @@ const Nav = ({ active, root }) => {
             activeClassName={styles.current}
             to="/work"
           >
-            Work
+            <span>Work</span>
           </Link>
         </li>
         <li>
@@ -26,7 +26,7 @@ const Nav = ({ active, root }) => {
             activeClassName={styles.current}
             to="/work"
           >
-            About
+            <span>About</span>
           </Link>
         </li>
         <li>
@@ -35,7 +35,7 @@ const Nav = ({ active, root }) => {
             activeClassName={styles.current}
             to="/work"
           >
-            Contact
+            <span>Contact</span>
           </Link>
         </li>
       </ul>

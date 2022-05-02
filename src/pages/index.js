@@ -19,7 +19,7 @@ const Index = ({ data, location }) => {
         </p>
       </section>
       <section>
-        <div>
+        <div className={styles.homePageSection}>
           <h3>Focus</h3>
           <p>
             This consultancy focuses on what we do best and where we know we can
@@ -31,7 +31,7 @@ const Index = ({ data, location }) => {
             Profile on LinkedIn
           </a>
         </div>
-        <div>
+        <div className={styles.homePageSection}>
           <h3>Expertise</h3>
           <p>
             We have a strong record helping a wide range of clients succeed with
@@ -65,7 +65,7 @@ const Index = ({ data, location }) => {
             <li>Business writing, board report writing</li>
           </ul>
         </div>
-        <div>
+        <div className={styles.homePageSection}>
           <h3>Sectors</h3>
           <ul>
             <li>
@@ -78,7 +78,7 @@ const Index = ({ data, location }) => {
             <li>America’s Cup (strategic counsel to two winning teams)</li>
           </ul>
         </div>
-        <div>
+        <div className={styles.homePageSection}>
           <h3>Contact</h3>
           <p>+027 615 20 06</p>
           <p>info@robertmannion.nz</p>
