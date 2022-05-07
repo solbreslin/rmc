@@ -15,73 +15,78 @@ const Index = ({ data, location }) => {
         <h1 className={styles.bannerTitle}>Thinking. Results.</h1>
         <span className={styles.bannerSeparator}></span>
         <p className={styles.bannerSubtitle}>
-          Helping solve significant communication challenges.
+          Helping solve significant communication challenges
         </p>
       </section>
       <section>
-        <div className={styles.homePageSection}>
-          <h3>Focus</h3>
+        <div className={styles.homePageSection} id="about">
+          <h3>About</h3>
           <p>
-            This consultancy focuses on what we do best and where we know we can
-            give our clients the most value. We bring extensive leadership
-            experience with leading communication agencies and measure our
-            success by the results we help our clients achieve.
+            We help clients move forward in situations where how they connect
+            with people and communicate is central to success.
           </p>
-          <a href="https://www.linkedin.com/in/robert-mannion-4a55265/">
-            Profile on LinkedIn
-          </a>
+          <p>
+            We value plain language, take accountability seriously and work only
+            in areas where we provide sector-leading experience and expertise.
+          </p>
+          <p>
+            <a
+              href="https://www.linkedin.com/in/robert-mannion-4a55265/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Robert Mannion
+            </a>
+            , our founder, has a proven record in communication strategy, crisis
+            management, writing, coaching, and in leading training, change and
+            engagement programmes.
+          </p>
+          <p>
+            He has advised major private and public sector clients, led
+            communication and litigation strategy for two winning America’s Cup
+            syndicates and has helped many corporate and other leaders
+            successfully get through big communication challenges.
+          </p>
+          <p>
+            Before getting into consultancy, Robert won national journalism
+            awards. He was a publisher and editor of New Outlook magazine, a
+            feature writer for the Dominion Post and a contributor to The Sydney
+            Morning Herald, Agence France-Presse, Metro, Reader’s Digest, The
+            New Zealand Listener and National Business Review.
+          </p>
         </div>
-        <div className={styles.homePageSection}>
-          <h3>Expertise</h3>
-          <p>
-            We have a strong record helping a wide range of clients succeed with
-            often challenging assignments.
-          </p>
-
-          <p>
-            We draw on the input of highly-experienced communication
-            professionals in putting together the right team for each client or
-            client need.
-          </p>
-          <h4>Areas of expertise</h4>
+        <div className={styles.homePageSection} id="work">
+          <h3>Work</h3>
+          <h4>Expertise</h4>
           <ul>
-            <li>Crisis management, planning, preparation</li>
-            <li>Stakeholder engagement</li>
-            <li>Reputation management</li>
-            <li>
-              Communication strategy, including change, health, litigation and
-              political communication
-            </li>
+            <li>Communication strategy, writing and delivery</li>
+            <li>Crisis management, coaching, planning and preparation</li>
+            <li>Media and presentational training</li>
+            <li>Stakeholder engagement and audits</li>
             <li>Corporate communication, documents and materials</li>
             <li>Media relations</li>
           </ul>
-          <h4>Training and capability building</h4>
+          <h4>Sectors</h4>
           <ul>
-            <li>
-              Facilitation of workshops in strategy, change, brand narrative
-            </li>
-            <li>Media training</li>
-            <li>Presentation training, managing high-conflict environments</li>
-            <li>Business writing, board report writing</li>
+            <li>Corporate</li>
+            <li>Infrastructure and services</li>
+            <li>Public good, recreation, social agency</li>
+            <li>Property and housing</li>
+            <li>Organisations with an Auckland focus</li>
+            <li>Health</li>
+            <li>Professional services</li>
+            <li>Primary and manufacturing</li>
+            <li>Education and research</li>
           </ul>
         </div>
-        <div className={styles.homePageSection}>
-          <h3>Sectors</h3>
-          <ul>
-            <li>
-              Private sector, property, energy, finance, insurance, primary
-              industry
-            </li>
-            <li>Public sector, education, health, housing</li>
-            <li>Public good, heritage, recreation, social agency</li>
-            <li>Infrastructure, regional and private and public sector</li>
-            <li>America’s Cup (strategic counsel to two winning teams)</li>
-          </ul>
-        </div>
-        <div className={styles.homePageSection}>
+
+        <div className={styles.homePageSection} id="contact">
           <h3>Contact</h3>
-          <p>+027 615 20 06</p>
-          <p>info@robertmannion.nz</p>
+          <p>
+            <a href="mailto:info@robertmannion.nz">info@robertmannion.nz</a>
+            <br />
+            +027 615 20 06
+          </p>
           <p>
             123 Fake St,
             <br />

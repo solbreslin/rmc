@@ -1,9 +1,10 @@
 body {
 }
 
-section {
+section,
+footer {
   display: grid;
-  grid-template-columns: 1fr minmax(320px, 800px) 1fr;
+  grid-template-columns: 1fr minmax(320px, 1000px) 1fr;
   padding: 0 1rem;
 
   > * {

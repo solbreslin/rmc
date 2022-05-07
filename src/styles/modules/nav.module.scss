@@ -28,17 +28,6 @@
     transition: none;
   }
 
-  &.active {
-    opacity: 1;
-    pointer-events: auto;
-  }
-
-  &.index {
-    li a {
-      opacity: 1;
-    }
-  }
-
   ul {
     flex-grow: 1;
 
@@ -52,33 +41,19 @@
 
     a {
       --letter-spacing: 0.05em;
+      color: white;
       flex: 1;
       font-size: clamp(var(--rmc-font-size-2), 6vh, var(--rmc-font-size-4));
       line-height: 1.75;
-      opacity: 0.5;
       padding: 0 1rem;
 
-      &.current {
-        opacity: 1;
-      }
-
       @include respond-to(tablet) {
+        color: #999;
         font-size: var(--rmc-font-size-1);
         letter-spacing: var(--rmc-ls-body);
         padding: var(--menu-item-padding);
 
-        span {
-          border-bottom: 2px solid transparent;
-          padding-bottom: 3px;
-        }
-
         &:hover {
-          span {
-            border-bottom-color: currentColor;
-          }
-        }
-
-        &.current {
           color: white;
         }
       }
