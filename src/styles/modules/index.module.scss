@@ -61,7 +61,13 @@
   }
 
   a {
-    text-decoration: underline;
+    background-image: linear-gradient(
+      to bottom,
+      transparent calc(100% - 4px),
+      grey calc(100% - 4px),
+      grey calc(100% - 3px),
+      transparent calc(100% - 3px)
+    );
   }
 
   h3 {
