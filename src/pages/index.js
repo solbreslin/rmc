@@ -1,4 +1,4 @@
-import * as React from "react";
+import React, { useEffect } from "react";
 import { graphql } from "gatsby";
 import * as styles from "./../styles/modules/index.module.scss";
 
@@ -8,22 +8,53 @@ import Head from "../components/head";
 const Index = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`;
 
+  useEffect(() => {
+    if (document == undefined) return;
+
+    const els = document.querySelectorAll("[data-animate]");
+
+    if (!els.length) return;
+
+    els.forEach(el => {
+      const order = el.dataset.animate;
+
+      el.style.transitionDelay = `${order * 0.2}s`;
+      el.style.opacity = 1;
+      el.style.transform = `none`;
+    });
+
+    const separator = document.querySelector("[data-animate-grow]");
+    if (separator) {
+      const width = separator.dataset.animateGrow;
+
+      separator.style.width = width;
+    }
+  }, []);
+
   return (
     <Layout location={location} title={siteTitle}>
       <Head title="Home" />
       <section className={styles.banner}>
-        <h1 className={styles.bannerTitle}>Thinking. Results.</h1>
-        <span className={styles.bannerSeparator}></span>
-        <p className={styles.bannerSubtitle}>
-          Helping solve significant communication challenges
-        </p>
+        <div>
+          <h1 className={styles.bannerTitle} data-animate="1">
+            Thinking. Results.
+          </h1>
+          <span
+            className={styles.bannerSeparator}
+            data-animate="4"
+            data-animate-grow="5rem"
+          ></span>
+          <p data-animate="2" className={styles.bannerSubtitle}>
+            Helping solve significant communication challenges
+          </p>
+        </div>
       </section>
-      <section>
-        <div className={styles.homePageSection} id="about">
+      <section className={styles.homePageSection} id="about" data-animate="3">
+        <div>
           <h3>About</h3>
           <p>
             We help clients move forward in situations where how they connect
-            with people and communicate is central to success.
+            with people and communication is central to success.
           </p>
           <p>
             We value plain language, take accountability seriously and work only
@@ -55,7 +86,9 @@ const Index = ({ data, location }) => {
             New Zealand Listener and National Business Review.
           </p>
         </div>
-        <div className={styles.homePageSection} id="work">
+      </section>
+      <section className={styles.homePageSection} id="work">
+        <div>
           <h3>Work</h3>
           <h4>Expertise</h4>
           <ul>
@@ -79,8 +112,10 @@ const Index = ({ data, location }) => {
             <li>Education and research</li>
           </ul>
         </div>
+      </section>
 
-        <div className={styles.homePageSection} id="contact">
+      <section className={styles.homePageSection} id="contact">
+        <div>
           <h3>Contact</h3>
           <p>
             <a href="mailto:info@robertmannion.nz">info@robertmannion.nz</a>
@@ -92,7 +127,9 @@ const Index = ({ data, location }) => {
             <br />
             Britomart
             <br />
-            Auckland
+            Auckland,
+            <br />
+            New Zealand
           </p>
         </div>
       </section>

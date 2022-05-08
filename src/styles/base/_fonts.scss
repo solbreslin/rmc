@@ -1,14 +1,25 @@
 @font-face {
-  font-family: "Akkurat-Light";
-  src: url("./../fonts/Akkurat/Akkurat-Light.woff") format("woff");
+  font-family: "soehne";
+  font-style: normal;
+  font-weight: normal;
+  src: url("./../fonts/klim/sohne/test-sohne/test-soehne-buch.woff2")
+    format("woff2");
 }
 
+/*!sc*/
 @font-face {
-  font-family: "Akkurat-Reg";
-  src: url("./../fonts/Akkurat/Akkurat-Regular.woff") format("woff");
+  font-family: "soehne bold";
+  font-style: normal;
+  font-weight: bold;
+  src: url("./../fonts/klim/sohne/test-sohne/test-soehne-kraftig.woff2")
+    format("woff2");
 }
 
+/*!sc*/
 @font-face {
-  font-family: "Akkurat-Bold";
-  src: url("./../fonts/Akkurat/Akkurat-Bold.woff") format("woff");
+  font-family: "signifier";
+  font-style: normal;
+  font-weight: normal;
+  src: url("./../fonts/klim/signifier/test-signifier-light.woff2")
+    format("woff2");
 }

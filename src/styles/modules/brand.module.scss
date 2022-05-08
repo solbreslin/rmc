@@ -1,12 +1,13 @@
 .brand {
   --logo-font-size: 1.25rem;
 
+  font-family: var(--rmc-font-sans-serif);
   font-size: var(--logo-font-size);
-  font-weight: 500;
   line-height: 1;
   position: relative;
 
   a {
+    cursor: default;
     display: flex;
     padding: var(--menu-item-padding);
   }

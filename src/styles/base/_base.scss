@@ -1,18 +1,14 @@
-body {
-}
-
-section,
-footer {
-  display: grid;
-  grid-template-columns: 1fr minmax(320px, 1000px) 1fr;
+section {
   padding: 0 1rem;
 
-  > * {
-    grid-column: 2;
-  }
-
   @include respond-to(tablet) {
+    display: grid;
+    grid-template-columns: 1fr minmax(280px, var(--rmb-page-max-width)) 1fr;
     padding: 0 2rem;
+
+    > div {
+      grid-column: 2;
+    }
   }
 }
 

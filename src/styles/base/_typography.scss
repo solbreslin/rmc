@@ -1,13 +1,12 @@
 html {
   font-size: 100%;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 body {
-  //font-family: Akkurat-Reg, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-family: "aktiv-grotesk", sans-serif;
+  font-family: var(--rmc-font-serif), sans-serif;
   font-size: 1em;
-  font-style: normal;
-  line-height: var(--rmc-line-height);
+  line-height: 1.4;
 }
 
 h1,
@@ -21,9 +20,5 @@ h6 {
 }
 
 p {
-  margin-bottom: 1rem;
-}
-
-.has-text-medium {
-  font-weight: 500;
+  margin-bottom: 1.4em;
 }
