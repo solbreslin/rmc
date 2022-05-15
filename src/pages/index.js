@@ -53,8 +53,8 @@ const Index = ({ data, location }) => {
         <div>
           <h3>About</h3>
           <p>
-            We help clients move forward in situations where how they connect
-            with people and communication is central to success.
+            We help clients in situations where how they connect and communicate
+            with people is central to success.
           </p>
           <p>
             We value plain language, take accountability seriously and work only
@@ -80,10 +80,10 @@ const Index = ({ data, location }) => {
           </p>
           <p>
             Before getting into consultancy, Robert won national journalism
-            awards. He was a publisher and editor of New Outlook magazine, a
+            awards. He was a publisher and editor of New Outlook magazine, a
             feature writer for the Dominion Post and a contributor to The Sydney
-            Morning Herald, Agence France-Presse, Metro, Reader’s Digest, The
-            New Zealand Listener and National Business Review.
+            Morning Herald, Agence France-Presse, Metro, Reader’s Digest, The
+            New Zealand Listener and National Business Review.
           </p>
         </div>
       </section>
@@ -96,16 +96,20 @@ const Index = ({ data, location }) => {
             <li>Crisis management, coaching, planning and preparation</li>
             <li>Media and presentational training</li>
             <li>Stakeholder engagement and audits</li>
-            <li>Corporate communication, documents and materials</li>
-            <li>Media relations</li>
+            <li>
+              Corporate communication, litigation support, corporate documents
+            </li>
+            <li>Media advice, relations</li>
           </ul>
           <h4>Sectors</h4>
           <ul>
             <li>Corporate</li>
             <li>Infrastructure and services</li>
-            <li>Public good, recreation, social agency</li>
+            <li>Public good, social agency</li>
             <li>Property and housing</li>
-            <li>Organisations with an Auckland focus</li>
+            <li>
+              Working alongside iwi-owned and Māori-focussed organisations
+            </li>
             <li>Health</li>
             <li>Professional services</li>
             <li>Primary and manufacturing</li>
