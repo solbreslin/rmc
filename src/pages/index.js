@@ -53,8 +53,8 @@ const Index = ({ data, location }) => {
         <div>
           <h3>About</h3>
           <p>
-            We help clients in situations where how they connect and communicate
-            with people is central to success.
+            We help clients in situations where how they communicate and connect
+            is central to success.
           </p>
           <p>
             We value plain language, take accountability seriously and work only
