@@ -1,7 +1,7 @@
 section {
   padding: 0 1rem;
 
-  @include respond-to(tablet) {
+  @include respond-to(desktop) {
     display: grid;
     grid-template-columns: 1fr minmax(280px, var(--rmb-page-max-width)) 1fr;
     padding: 0 2rem;
@@ -17,7 +17,7 @@ section {
   max-width: var(--rmc-content-max-width);
   padding: var(--rmc-space-3);
 
-  @include respond-to(tablet) {
+  @include respond-to(desktop) {
     padding: 2rem;
   }
 }

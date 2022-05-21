@@ -6,7 +6,6 @@
     format("woff2");
 }
 
-/*!sc*/
 @font-face {
   font-family: "soehne bold";
   font-style: normal;
@@ -15,11 +14,18 @@
     format("woff2");
 }
 
-/*!sc*/
 @font-face {
   font-family: "signifier";
   font-style: normal;
   font-weight: normal;
   src: url("./../fonts/klim/signifier/test-signifier-light.woff2")
+    format("woff2");
+}
+
+@font-face {
+  font-family: "soehne schmal";
+  font-style: normal;
+  font-weight: normal;
+  src: url("./../fonts/klim/sohne/sohne-schmal/test-soehne-schmal-halbfett.woff2")
     format("woff2");
 }

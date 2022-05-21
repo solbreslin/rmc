@@ -12,6 +12,8 @@
   transition: opacity var(--rmc-transition-settings);
   z-index: 10000;
 
+  display: none;
+
   @media screen and (max-height: 400px) {
     padding-top: var(--rmc-space-6);
   }
@@ -26,6 +28,8 @@
     pointer-events: auto;
     position: static;
     transition: none;
+
+    display: flex;
   }
 
   ul {

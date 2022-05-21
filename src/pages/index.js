@@ -4,6 +4,7 @@ import * as styles from "./../styles/modules/index.module.scss";
 
 import Layout from "../components/layout";
 import Head from "../components/head";
+import { StaticImage } from "gatsby-plugin-image";
 
 const Index = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`;
@@ -35,6 +36,9 @@ const Index = ({ data, location }) => {
     <Layout location={location} title={siteTitle}>
       <Head title="Home" />
       <section className={styles.banner}>
+        {/* <div className={styles.bannerImage}>
+          <StaticImage src="../images/bg-2.jpg" />
+        </div> */}
         <div>
           <h1 className={styles.bannerTitle} data-animate="1">
             Thinking. Results.
@@ -45,7 +49,9 @@ const Index = ({ data, location }) => {
             data-animate-grow="5rem"
           ></span>
           <p data-animate="2" className={styles.bannerSubtitle}>
-            Helping solve significant communication challenges
+            Helping solve significant
+            <br />
+            communication challenges
           </p>
         </div>
       </section>
@@ -72,6 +78,7 @@ const Index = ({ data, location }) => {
             management, writing, coaching, and in leading training, change and
             engagement programmes.
           </p>
+
           <p>
             He has advised major private and public sector clients, led
             communication and litigation strategy for two winning America’s Cup
@@ -85,6 +92,11 @@ const Index = ({ data, location }) => {
             Morning Herald, Agence France-Presse, Metro, Reader’s Digest, The
             New Zealand Listener and National Business Review.
           </p>
+
+          <StaticImage
+            src="../images/robert-mannion.jpg"
+            alt="Profile photo of Robert Mannion"
+          />
         </div>
       </section>
       <section className={styles.homePageSection} id="work">
@@ -100,6 +112,8 @@ const Index = ({ data, location }) => {
               Corporate communication, litigation support, corporate documents
             </li>
             <li>Media advice, relations</li>
+            <li>Cyber incident response and planning</li>
+            <li>Narrative development/facilitation</li>
           </ul>
           <h4>Sectors</h4>
           <ul>

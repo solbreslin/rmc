@@ -6,6 +6,8 @@
   --transition-setting: 0.125s ease-out;
   --transition-delay: 0.125s;
 
+  display: none;
+
   cursor: pointer;
   height: var(--button-size);
   margin-right: 8px;
