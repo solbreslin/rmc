@@ -51,7 +51,7 @@ const Index = ({ data, location }) => {
           <p data-animate="2" className={styles.bannerSubtitle}>
             Helping solve significant
             <br />
-            communication challenges
+            &nbsp;communication challenges
           </p>
         </div>
       </section>
