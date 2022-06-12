@@ -57,40 +57,39 @@ const Index = ({ data, location }) => {
         <div>
           <h3>About</h3>
           <p>
-            We help clients in situations where how they communicate and connect
-            is central to success.
+            This consultancy was founded to help clients in situations where how
+            they communicate and connect is central to success.
           </p>
-          <p>
+          {/* <p>
             We value plain language, take accountability seriously and work only
             in areas where we provide sector-leading experience and expertise.
-          </p>
+          </p> */}
           <p>
+            Founder{" "}
             <a
               href="https://www.linkedin.com/in/robert-mannion-4a55265/"
               target="_blank"
               rel="noreferrer"
             >
               Robert Mannion
-            </a>
-            , our founder, has a proven record in communication strategy, crisis
-            management, writing, coaching, and in leading training, change and
-            engagement programmes.
+            </a>{" "}
+            has a proven record in communication strategy, crisis management,
+            writing, coaching, and in leading training, change and engagement
+            programmes.
           </p>
-
           <p>
-            He has advised major private and public sector clients, led
-            communication and litigation strategy for two winning America’s Cup
-            syndicates and has helped many corporate and other leaders
+            He has advised some of New Zealand's largest private and public
+            sector organisations, led significant communication and litigation
+            strategies and has helped many corporate and other leaders
             successfully get through big communication challenges.
           </p>
           <p>
             Before getting into consultancy, Robert won national journalism
-            awards. He was a publisher and editor of New Outlook magazine, a
-            feature writer for the Dominion Post and a contributor to The Sydney
-            Morning Herald, Agence France-Presse, Metro, Reader’s Digest, The
-            New Zealand Listener and National Business Review.
+            awards. He was a magazine publisher and editor and journalist or
+            contributor to the Dominion Post, The Sydney Morning Herald, Agence
+            France-Presse, Metro, Reader’s Digest, The New Zealand Listener and
+            National Business Review.
           </p>
-
           <StaticImage
             src="../images/robert-mannion.jpg"
             alt="Profile photo of Robert Mannion"
