@@ -4,6 +4,10 @@
   color: white;
   display: grid;
   min-height: 45vh;
+
+  @include respond-to(tablet) {
+    min-height: 66vh;
+  }
 }
 
 .banner-image {
