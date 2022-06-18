@@ -1,0 +1,25 @@
+.page-nav {
+  background-color: white;
+  box-shadow: 0 2px 5px 5px hsla(0deg, 0%, 50%, 0.075);
+  padding: var(--rmc-space-2);
+  position: sticky;
+  top: 0;
+  z-index: 1;
+
+  @include respond-to(tablet) {
+    display: none;
+  }
+
+  ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+  }
+
+  li {
+  }
+
+  a {
+    font-family: var(--rmc-font-sans-serif-bold);
+  }
+}

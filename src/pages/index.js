@@ -4,6 +4,7 @@ import * as styles from "./../styles/modules/index.module.scss";
 
 import Layout from "../components/layout";
 import Head from "../components/head";
+import PageNav from "../components/page-nav";
 import { StaticImage } from "gatsby-plugin-image";
 
 const Index = ({ data, location }) => {
@@ -53,6 +54,7 @@ const Index = ({ data, location }) => {
           </p>
         </div>
       </section>
+      <PageNav />
       <section className={styles.homePageSection} id="about" data-animate="3">
         <div>
           <h3>About</h3>
@@ -133,18 +135,11 @@ const Index = ({ data, location }) => {
         <div>
           <h3>Contact</h3>
           <p>
-            <a href="mailto:info@robertmannion.nz">info@robertmannion.nz</a>
+            <a href="mailto:robert@mannionconsulting.nz">
+              robert@mannionconsulting.nz
+            </a>
             <br />
             +027 615 20 06
-          </p>
-          <p>
-            123 Fake St,
-            <br />
-            Britomart
-            <br />
-            Auckland,
-            <br />
-            New Zealand
           </p>
         </div>
       </section>

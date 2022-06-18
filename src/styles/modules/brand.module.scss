@@ -11,4 +11,14 @@
     display: flex;
     padding: var(--menu-item-padding);
   }
+
+  svg {
+    display: block;
+    margin-bottom: -4px;
+    max-width: 12rem;
+
+    @include respond-to(tablet) {
+      max-width: 16rem;
+    }
+  }
 }

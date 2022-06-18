@@ -3,7 +3,7 @@
   background: black;
   color: white;
   display: grid;
-  min-height: 66vh;
+  min-height: 45vh;
 }
 
 .banner-image {
@@ -63,7 +63,7 @@
   font-size: clamp(1rem, 2.4vw, 1.25rem);
 
   > div {
-    padding: 2rem 0 4rem;
+    padding: 3.6rem 0 3.6rem;
 
     @include respond-to(desktop) {
       display: grid;
@@ -131,7 +131,7 @@
       color: #dadce0;
       content: "\2022";
       margin-right: 1rem;
-      margin-left: calc(-1rem - 7px);
+      // margin-left: calc(-1rem - 7px);
     }
   }
 
