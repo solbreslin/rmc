@@ -13,13 +13,15 @@
   ul {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    justify-items: center;
   }
 
   li {
+    display: flex;
+    text-align: center;
   }
 
   a {
+    flex: 1;
     font-family: var(--rmc-font-sans-serif-bold);
   }
 }
