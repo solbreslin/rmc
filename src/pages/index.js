@@ -57,16 +57,19 @@ const Index = ({ data, location }) => {
       <PageNav />
       <section className={styles.homePageSection} id="about" data-animate="3">
         <div>
-          <h3>About</h3>
+          <div className={styles.stickyContainer}>
+            <h3>About</h3>
+          </div>
           <p>
             This consultancy was founded to help clients in situations where how
             they communicate and connect is central to success.
-          </p>
-          {/* <p>
-            We value plain language, take accountability seriously and work only
-            in areas where we provide sector-leading experience and expertise.
-          </p> */}
-          <p>
+            <br />
+            <br />
+            <StaticImage
+              src="../images/robert-mannion.jpg"
+              alt="Profile photo of Robert Mannion"
+              className={styles.homePageImage}
+            />
             Founder{" "}
             <a
               href="https://www.linkedin.com/in/robert-mannion-4a55265/"
@@ -78,29 +81,27 @@ const Index = ({ data, location }) => {
             has a proven record in communication strategy, crisis management,
             writing, coaching, and in leading training, change and engagement
             programmes.
-          </p>
-          <p>
+            <br />
+            <br />
             He has advised some of New Zealand's largest private and public
             sector organisations, led significant communication and litigation
             strategies and has helped many corporate and other leaders
             successfully get through big communication challenges.
-          </p>
-          <p>
+            <br />
+            <br />
             Before getting into consultancy, Robert won national journalism
             awards. He was a magazine publisher and editor and journalist or
             contributor to the Dominion Post, The Sydney Morning Herald, Agence
             France-Presse, Metro, Reader’s Digest, The New Zealand Listener and
             National Business Review.
           </p>
-          <StaticImage
-            src="../images/robert-mannion.jpg"
-            alt="Profile photo of Robert Mannion"
-          />
         </div>
       </section>
       <section className={styles.homePageSection} id="work">
         <div>
-          <h3>Work</h3>
+          <div className={styles.stickyContainer}>
+            <h3>Work</h3>
+          </div>
           <h4>Expertise</h4>
           <ul>
             <li>Communication strategy, writing and delivery</li>
@@ -133,13 +134,15 @@ const Index = ({ data, location }) => {
 
       <section className={styles.homePageSection} id="contact">
         <div>
-          <h3>Contact</h3>
+          <div className={styles.stickyContainer}>
+            <h3>Contact</h3>
+          </div>
           <p>
             <a href="mailto:robert@mannionconsulting.nz">
               robert@mannionconsulting.nz
             </a>
             <br />
-            +027 615 20 06
+            +027 2310 301
           </p>
         </div>
       </section>

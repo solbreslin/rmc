@@ -71,7 +71,7 @@
       grid-template-columns: 1fr 57ch;
       padding: 2rem 0 6rem;
 
-      > *:not(h3) {
+      > *:not(.sticky-container) {
         grid-column: 2;
       }
     }
@@ -115,7 +115,7 @@
     font-weight: 500;
     margin-bottom: 1rem;
 
-    @include respond-to(tablet) {
+    @include respond-to(desktop) {
       margin: 0;
       position: sticky;
       top: 1rem;
@@ -142,10 +142,21 @@
   ul + h4 {
     margin-top: 2rem;
   }
+}
 
-  img {
-    height: auto;
-    max-width: 100%;
+.sticky-container {
+  grid-row: 1 / 999;
+}
+
+.home-page-image {
+  display: block;
+  height: auto;
+  margin: 0 auto 1.4em;
+  max-width: 360px;
+
+  @include respond-to(tablet) {
+    float: left;
+    margin: 0 1.4em 0 0;
   }
 }
 
